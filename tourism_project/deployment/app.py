@@ -8,7 +8,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-MODEL_PATH = "model.joblib"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "model.joblib")
 
 st.set_page_config(page_title="Wellness Package Predictor", page_icon="🏝️")
 
